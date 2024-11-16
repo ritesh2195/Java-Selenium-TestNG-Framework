@@ -3,6 +3,8 @@ package com.ui.tests;
 import com.factory.BrowserFactory;
 import com.ui.pages.HomePage;
 import com.ui.pages.LoginPage;
+import com.utility.BrowserUtility;
+import com.utility.ConfigReaderUtility;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -16,7 +18,7 @@ public class BaseTest {
 
         BrowserFactory factory = new BrowserFactory();
 
-        factory.init_driver("chrome");
+        factory.init_driver(ConfigReaderUtility.getInstance().getPropertyValue("BROWSER"));
 
         homePage = new HomePage(BrowserFactory.getDriver());
 
@@ -27,5 +29,10 @@ public class BaseTest {
     public void tearDown(){
 
         BrowserFactory.getDriver().quit();
+    }
+
+    public BrowserUtility getInstance(){
+
+        return homePage;
     }
 }

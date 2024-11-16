@@ -5,6 +5,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.ui.tests.BaseTest;
+import com.utility.BrowserUtility;
 import com.utility.ExtentReporterUtility;
 import com.utility.LoggerUtility;
 import org.apache.logging.log4j.Logger;
@@ -45,6 +47,14 @@ public class TestListener implements ITestListener {
         ExtentReporterUtility.getExtentTest().log(Status.FAIL, result.getMethod().getMethodName() + " " + "FAILED");
 
         ExtentReporterUtility.getExtentTest().log(Status.FAIL,result.getThrowable().getMessage());
+
+        Object testInstance = result.getInstance();
+
+        BrowserUtility browserUtility = ((BaseTest)testInstance).getInstance();
+
+        String screenshotFilePath = browserUtility.takeScreenshot(result.getMethod().getMethodName());
+
+        ExtentReporterUtility.getExtentTest().addScreenCaptureFromPath(screenshotFilePath);
     }
 
     public void onTestSkipped(ITestResult result) {

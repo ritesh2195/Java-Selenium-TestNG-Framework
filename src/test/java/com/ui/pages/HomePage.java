@@ -1,6 +1,5 @@
 package com.ui.pages;
 
-import com.factory.BrowserFactory;
 import com.utility.BrowserUtility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

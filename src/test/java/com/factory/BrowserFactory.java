@@ -1,5 +1,7 @@
 package com.factory;
 
+import com.constants.BrowserType;
+import com.utility.ConfigReaderUtility;
 import com.utility.JSONUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,29 +19,31 @@ public class BrowserFactory {
      * This method is used to initialize the thradlocal driver on the basis of given
      * browser
      *
-     * @param browser
+     * @param browserName
      * @return this will return tldriver.
      */
-    public WebDriver init_driver(String browser) {
+    public WebDriver init_driver(String browserName) {
 
-        switch (browser) {
-            case "chrome":
+        BrowserType browserType = BrowserType.fromString(browserName);
+
+        switch (browserType) {
+            case CHROME:
 
                 tlDriver.set(new ChromeDriver());
 
                 break;
-            case "firefox":
+            case FIREFOX:
 
                 tlDriver.set(new FirefoxDriver());
 
                 break;
-            case "safari":
+            case SAFARI:
 
                 tlDriver.set(new SafariDriver());
 
                 break;
             default:
-                System.out.println("Please pass the correct browser value: " + browser);
+                System.out.println("Please pass the correct browser value: " + browserName);
                 break;
         }
 

@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 public class BrowserUtility {
 
@@ -116,19 +118,31 @@ public class BrowserUtility {
         return driver.findElement(locator).isDisplayed();
     }
 
-    public void takeScreenshot(String name){
+    public String takeScreenshot(String fileName){
 
         TakesScreenshot screenshot = (TakesScreenshot)driver;
 
         File screenshotFile = screenshot.getScreenshotAs(OutputType.FILE);
 
+        Date date = new Date();
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH-mm-ss");
+
+        String timeStamp = simpleDateFormat.format(date);
+
+        String path = System.getProperty("user.dir")+"//screenshots//"+fileName+"-"+timeStamp+".png";
+
+        File file = new File(path);
+
         try {
 
-            FileUtils.copyFile(screenshotFile,new File("screenshots//"+name));
+            FileUtils.copyFile(screenshotFile,file);
 
         } catch (IOException e) {
 
             e.printStackTrace();
         }
+
+        return path;
     }
 }

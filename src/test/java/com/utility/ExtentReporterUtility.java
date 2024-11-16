@@ -10,7 +10,7 @@ public class ExtentReporterUtility {
     private static ThreadLocal<ExtentTest> extentTestThreadLocal = new ThreadLocal<>();
 
     public static void setupSparkReporter(String reportName){
-        ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("Reports//"+reportName+".html");
+        ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("reports//"+reportName+".html");
 
         extentReports = new ExtentReports();
 
