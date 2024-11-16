@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "DEV": {
+      "url": "http://www.automationpractice.pl/index.php",
+      "MAX_COUNT": 3
+    },
+    "QA": {
+      "url": "http://www.automationpractice.pl/index.php",
+      "MAX_COUNT": 3
+    },
+    "REGRESSION": {
+      "url": "http://www.automationpractice.pl/index.php",
+      "MAX_COUNT": 3
+    },
+    "UAT": {
+      "url": "http://www.automationpractice.pl/index.php",
+      "MAX_COUNT": 3
+    },
+    "PROD": {
+      "url": "http://www.automationpractice.pl/index.php",
+      "MAX_COUNT": 3
+    }
+  }
+}
