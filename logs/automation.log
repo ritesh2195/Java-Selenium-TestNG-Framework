@@ -1,29 +1,29 @@
-2024-11-17 21:22:36 [main] INFO com.ui.listeners.TestListener::onStart::67 Test suite started 
-2024-11-17 21:23:11 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::25 validUserLoginTest 
-2024-11-17 21:23:11 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::27 Verify valid user is able to login or not 
-2024-11-17 21:23:11 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
-2024-11-17 21:23:11 [TestNG-test-Nopackage-2] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::25 invalidUserLoginTest 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::27 Verify invalid user is not able to login 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-1] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
-2024-11-17 21:23:12 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
-2024-11-17 21:23:13 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
-2024-11-17 21:23:13 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
-2024-11-17 21:23:14 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
-2024-11-17 21:23:14 [TestNG-test-Nopackage-2] INFO com.ui.pages.MyAccountPage::getText::102 Trying to get text from By.xpath: //a[@class='account']//span 
-2024-11-17 21:23:14 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
-2024-11-17 21:23:15 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestSuccess::36 validUserLoginTest PASSED 
-2024-11-17 21:23:15 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestSuccess::36 invalidUserLoginTest PASSED 
-2024-11-17 21:23:39 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::25 validUserLoginTest 
-2024-11-17 21:23:39 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::27 Verify valid user is able to login or not 
-2024-11-17 21:23:39 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
-2024-11-17 21:23:39 [TestNG-test-Nopackage-2] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
-2024-11-17 21:23:41 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
-2024-11-17 21:23:41 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
-2024-11-17 21:23:42 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
-2024-11-17 21:23:43 [TestNG-test-Nopackage-2] INFO com.ui.pages.MyAccountPage::getText::102 Trying to get text from By.xpath: //a[@class='account']//span 
-2024-11-17 21:23:43 [TestNG-test-Nopackage-2] ERROR com.ui.listeners.TestListener::onTestFailure::43 validUserLoginTest FAILED 
-2024-11-17 21:23:43 [TestNG-test-Nopackage-2] ERROR com.ui.listeners.TestListener::onTestFailure::45 expected [Ritesh Mishra] but found [Ahiasiasjioasanjnsaijsa sdsd] 
-2024-11-17 21:23:44 [main] INFO com.ui.listeners.TestListener::onFinish::74 Test suite completed 
+2024-11-18 00:15:50 [main] INFO com.ui.listeners.TestListener::onStart::67 Test suite started 
+2024-11-18 00:15:54 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::25 invalidUserLoginTest 
+2024-11-18 00:15:54 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::27 Verify invalid user is not able to login 
+2024-11-18 00:15:54 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
+2024-11-18 00:15:54 [TestNG-test-Nopackage-1] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
+2024-11-18 00:15:57 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::25 validUserLoginTest 
+2024-11-18 00:15:57 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::27 Verify valid user is able to login or not 
+2024-11-18 00:15:57 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
+2024-11-18 00:15:57 [TestNG-test-Nopackage-2] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
+2024-11-18 00:15:58 [TestNG-test-Nopackage-1] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
+2024-11-18 00:15:59 [TestNG-test-Nopackage-1] INFO com.ui.listeners.TestListener::onTestSuccess::36 invalidUserLoginTest PASSED 
+2024-11-18 00:15:59 [TestNG-test-Nopackage-2] INFO com.ui.pages.MyAccountPage::getText::102 Trying to get text from By.xpath: //a[@class='account']//span 
+2024-11-18 00:15:59 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestSuccess::36 validUserLoginTest PASSED 
+2024-11-18 00:16:06 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::25 validUserLoginTest 
+2024-11-18 00:16:06 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::27 Verify valid user is able to login or not 
+2024-11-18 00:16:06 [TestNG-test-Nopackage-2] INFO com.ui.listeners.TestListener::onTestStart::29 [sanity] 
+2024-11-18 00:16:06 [TestNG-test-Nopackage-2] INFO com.ui.pages.HomePage::clickOn::54 Trying to click on element By.xpath: //a[contains(text(),'Sign in')] 
+2024-11-18 00:16:07 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: email 
+2024-11-18 00:16:07 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::enterText::88 Trying to enter text in By.id: passwd 
+2024-11-18 00:16:07 [TestNG-test-Nopackage-2] INFO com.ui.pages.LoginPage::clickOn::54 Trying to click on element By.id: SubmitLogin 
+2024-11-18 00:16:08 [TestNG-test-Nopackage-2] INFO com.ui.pages.MyAccountPage::getText::102 Trying to get text from By.xpath: //a[@class='account']//span 
+2024-11-18 00:16:08 [TestNG-test-Nopackage-2] ERROR com.ui.listeners.TestListener::onTestFailure::43 validUserLoginTest FAILED 
+2024-11-18 00:16:08 [TestNG-test-Nopackage-2] ERROR com.ui.listeners.TestListener::onTestFailure::45 expected [Ritesh Mishra] but found [Ahiasiasjioasanjnsaijsa sdsd] 
+2024-11-18 00:16:09 [main] INFO com.ui.listeners.TestListener::onFinish::74 Test suite completed 

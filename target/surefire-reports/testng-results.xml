@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-18T00:15:50 IST" name="Automation practice UI test" finished-at="2024-11-18T00:16:09 IST" duration-ms="18985">
+    <groups>
+      <group name="sanity">
+        <method signature="LoginTest.invalidUserLoginTest()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" name="invalidUserLoginTest" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.validUserLoginTest(com.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" name="validUserLoginTest" class="com.ui.tests.LoginTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-11-18T00:15:50 IST" name="Nopackage" finished-at="2024-11-18T00:16:09 IST" duration-ms="18985">
+      <class name="com.ui.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:50 IST" name="setUp" finished-at="2024-11-18T00:15:54 IST" duration-ms="3922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.invalidUserLoginTest()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:50 IST" name="setUp" finished-at="2024-11-18T00:15:57 IST" duration-ms="6796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.validUserLoginTest(com.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidUserLoginTest()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:54 IST" name="invalidUserLoginTest" description="Verify invalid user is not able to login" finished-at="2024-11-18T00:15:59 IST" duration-ms="4783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUserLoginTest -->
+        <test-method signature="validUserLoginTest(com.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:57 IST" name="validUserLoginTest" description="Verify valid user is able to login or not" data-provider="LoginDataProvider" finished-at="2024-11-18T00:15:59 IST" duration-ms="2262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.pojo.User@23e1dcab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:59 IST" name="tearDown" finished-at="2024-11-18T00:15:59 IST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:15:59 IST" name="tearDown" finished-at="2024-11-18T00:16:00 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:16:00 IST" name="setUp" finished-at="2024-11-18T00:16:06 IST" duration-ms="6175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.validUserLoginTest(com.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserLoginTest(com.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:16:06 IST" name="validUserLoginTest" description="Verify valid user is able to login or not" data-provider="LoginDataProvider" finished-at="2024-11-18T00:16:08 IST" duration-ms="1920" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.pojo.User@192dec91]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Ritesh Mishra] but found [Ahiasiasjioasanjnsaijsa sdsd]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Ritesh Mishra] but found [Ahiasiasjioasanjnsaijsa sdsd]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.ui.tests.LoginTest.validUserLoginTest(LoginTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@a38c7fe]" started-at="2024-11-18T00:16:08 IST" name="tearDown" finished-at="2024-11-18T00:16:09 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ui.tests.LoginTest -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Automation practice UI test -->
+</testng-results>

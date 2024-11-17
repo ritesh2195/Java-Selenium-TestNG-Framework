@@ -2,6 +2,9 @@
 
 <suite name="Automation practice UI test" verbose="1" parallel="methods" thread-count="5">
     <test name="Nopackage">
+        <parameter name="browserName" value="${browserName}"/>
+        <parameter name="isRemoteExecution" value="${isRemoteExecution}"/>
+        <parameter name="isHeadless" value="${isHeadless}"/>
         <classes>
             <class name="com.ui.tests.LoginTest"/>
         </classes>

@@ -27,7 +27,7 @@ public class LoginPage extends BrowserUtility {
         return new MyAccountPage(getDriver());
     }
 
-    public boolean isAuthenticationErrorDisplay(){
+    public boolean isAuthenticationErrorDisplayed(){
         return isElementVisible(authenticationFailedLocator);
     }
 }

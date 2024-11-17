@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
@@ -17,26 +19,28 @@ public class BaseTest {
     LoginPage loginPage;
     boolean isRemoteExecution = false;
 
+    @Parameters({"browserName","isRemoteExecution","isHeadless"})
     @BeforeMethod
-    public void setUp(ITestResult result){
+    public void setUp(
+            @Optional("chrome") String browserName,
+            @Optional("false") boolean isRemoteExecution,
+            @Optional("false") boolean isHeadless,
+                      ITestResult result){
 
         WebDriver driver = null;
 
-        isRemoteExecution = Boolean.parseBoolean(ConfigReaderUtility.getInstance()
-                .getPropertyValue("IS_REMOTE_EXECUTION"));
+        this.isRemoteExecution = isRemoteExecution;
 
         if (isRemoteExecution){
 
-            driver = RemoteTestUtility.initializeLambdaTestSession(ConfigReaderUtility.getInstance()
-                    .getPropertyValue("BROWSER"),result.getMethod().getMethodName());
+            driver = RemoteTestUtility.initializeLambdaTestSession(browserName,result.getMethod()
+                    .getMethodName());
 
         } else {
 
             BrowserFactory factory = new BrowserFactory();
 
-            driver = factory.init_driver(ConfigReaderUtility.getInstance()
-                    .getPropertyValue("BROWSER"),Boolean.parseBoolean(ConfigReaderUtility
-                    .getInstance().getPropertyValue("IS_HEADLESS")));
+            driver = factory.init_driver(browserName,isHeadless);
         }
 
         homePage = new HomePage(driver);
