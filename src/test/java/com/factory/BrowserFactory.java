@@ -5,7 +5,11 @@ import com.utility.ConfigReaderUtility;
 import com.utility.JSONUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserFactory {
@@ -22,19 +26,42 @@ public class BrowserFactory {
      * @param browserName
      * @return this will return tldriver.
      */
-    public WebDriver init_driver(String browserName) {
+
+    public WebDriver init_driver(String browserName,boolean isHeadless) {
 
         BrowserType browserType = BrowserType.fromString(browserName);
 
         switch (browserType) {
             case CHROME:
 
-                tlDriver.set(new ChromeDriver());
+                if (isHeadless){
+                    ChromeOptions options = new ChromeOptions();
+
+                    options.addArguments("--headless=old");
+
+                    options.addArguments("--window-size=1920,1080");
+
+                    tlDriver.set(new ChromeDriver(options));
+                }
+
+                else {
+                    tlDriver.set(new ChromeDriver());
+                }
 
                 break;
             case FIREFOX:
+                if (isHeadless){
 
-                tlDriver.set(new FirefoxDriver());
+                    FirefoxOptions options = new FirefoxOptions();
+
+                    options.addArguments("--headless=old");
+
+                    tlDriver.set(new FirefoxDriver(options));
+                }
+                else {
+                    tlDriver.set(new FirefoxDriver());
+                }
+
 
                 break;
             case SAFARI:
@@ -42,6 +69,23 @@ public class BrowserFactory {
                 tlDriver.set(new SafariDriver());
 
                 break;
+
+            case EDGE:
+
+                if (isHeadless){
+                    EdgeOptions options = new EdgeOptions();
+
+                    options.addArguments("--headless=old");
+
+                    options.addArguments("disable-gpu");
+
+                    tlDriver.set(new EdgeDriver(options));
+                }
+
+                else {
+
+                    tlDriver.set(new EdgeDriver());
+                }
             default:
                 System.out.println("Please pass the correct browser value: " + browserName);
                 break;
