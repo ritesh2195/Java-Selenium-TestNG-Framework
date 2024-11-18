@@ -130,7 +130,7 @@ public class BrowserUtility {
 
         String timeStamp = simpleDateFormat.format(date);
 
-        String path ="./screenshots/"+fileName+"-"+timeStamp+".png";
+        String path ="screenshots/"+fileName+"-"+timeStamp+".png";
 
         File file = new File(path);
 
